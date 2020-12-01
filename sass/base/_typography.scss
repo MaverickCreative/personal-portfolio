@@ -1,0 +1,25 @@
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.7; /* 1.7 means 1.7 times bigger than the original line height */
+  font-size: 1.6rem;
+}
+
+.heading__primary {
+  display: inline-block;
+  font-size: 3.5rem;
+  font-weight: 400;
+  color: $color-grey-dark-3;
+}
+
+.heading__tertiary {
+  font-size: 3rem;
+  font-weight: 700;
+  color: $color-grey-dark-3;
+}
+
+.first__frontend-desc {
+  padding: 2rem 0;
+  font-weight: 375;
+  font-size: 2rem;
+}

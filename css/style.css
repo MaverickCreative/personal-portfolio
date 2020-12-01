@@ -1,0 +1,230 @@
+.u-center-text {
+  text-align: center; }
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem; }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+  @media (max-width: 600px) {
+    html {
+      font-size: 50%; } }
+
+body {
+  padding: 4rem;
+  box-sizing: border-box; }
+
+@media (max-width: 600px) {
+  body {
+    padding: 0rem; } }
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  /* 1.7 means 1.7 times bigger than the original line height */
+  font-size: 1.6rem; }
+
+.heading__primary {
+  display: inline-block;
+  font-size: 3.5rem;
+  font-weight: 400;
+  color: #333; }
+
+.heading__tertiary {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #333; }
+
+.first__frontend-desc {
+  padding: 2rem 0;
+  font-weight: 375;
+  font-size: 2rem; }
+
+.about {
+  margin: 0 auto;
+  width: 60%;
+  color: #f7f7f7; }
+  @media (max-width: 600px) {
+    .about {
+      width: 100%; } }
+  .about__greeting {
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 700; }
+  .about__me {
+    padding: 2rem;
+    font-size: 2rem;
+    font-weight: 450;
+    line-height: 1.8;
+    text-align: center; }
+    @media (max-width: 600px) {
+      .about__me {
+        padding: 0.5rem;
+        font-size: 1.8rem;
+        line-height: 1.6; } }
+
+.navigation {
+  position: relative; }
+  .navigation__logo-primary {
+    float: left;
+    width: 16rem; }
+    @media (max-width: 600px) {
+      .navigation__logo-primary {
+        width: 12rem; } }
+  .navigation__my-name {
+    position: absolute;
+    top: 7rem;
+    left: 20rem;
+    font-weight: 500;
+    color: #00b5e7;
+    font-size: 2rem;
+    background-image: linear-gradient(to right, #55c57a, #01d7db);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent; }
+  .navigation__resources {
+    position: absolute;
+    top: 6rem;
+    right: 0; }
+  .navigation__list {
+    clear: both; }
+  .navigation__list-item {
+    float: left;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #5643fa;
+    list-style: none; }
+    .navigation__list-item:not(:last-child) {
+      margin-right: 2.5rem; }
+  .navigation__link {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.2s;
+    border: 2px solid #00b5e7;
+    padding: 1rem;
+    border-radius: 10rem; }
+    .navigation__link:hover, .navigation__link:active {
+      background-color: #00b5e7;
+      color: white; }
+    .navigation__link-text {
+      text-decoration: none;
+      color: #000;
+      font-weight: 400 !important; }
+
+.header {
+  display: inline-block;
+  width: 100%;
+  padding: 10rem 0rem;
+  position: relative; }
+  .header__text-box {
+    display: block;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4rem;
+    color: rgba(0, 0, 0, 0.8); }
+  @media (min-width: 600px) {
+    .header__typewriter h3 {
+      overflow: hidden;
+      /* Ensures the content is not revealed until the animation */
+      border-right: 0.15em solid rgba(0, 0, 0, 0.7);
+      /* The typwriter cursor */
+      white-space: nowrap;
+      /* Keeps the content on a single line */
+      margin: 0 auto;
+      /* Gives that scrolling effect as the typing happens */
+      letter-spacing: 0.15em;
+      /* Adjust as needed */
+      animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite; } }
+  .header__heading-secondary {
+    position: absolute;
+    font-size: 2rem;
+    font-weight: 400 !important;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0; }
+  to {
+    width: 100%; } }
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent; }
+  50% {
+    border-color: rgba(0, 0, 0, 0.8); } }
+
+.row {
+  max-width: 80%;
+  text-align: center;
+  margin: 0 auto; }
+  .row:not(:last-child) {
+    margin-bottom: 8rem; }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .row [class^="col-"] {
+    min-height: 120vh;
+    float: left; }
+  .row .col-1-of-2 {
+    width: calc((100% - 6rem) / 2); }
+  .row .col-1-of-3 {
+    width: calc((100%) / 3); }
+  .row .col-2-of-3 {
+    width: calc( (2 * ((100% - 2 *6rem) / 3)) + 6rem); }
+  .row .col-1-of-4 {
+    width: calc((100% - 3 *6rem) / 4); }
+  .row .col-2-of-4 {
+    width: calc( 2 * ((100% - 3 *6rem) / 4) + 6rem); }
+  .row .col-3-of-4 {
+    width: calc( 3 * ((100% - 3 *6rem) / 4) + 2 *6rem); }
+
+.grid_column {
+  z-index: 10;
+  padding: 3rem;
+  margin-top: -16rem;
+  border-radius: 3px;
+  background-color: white;
+  border: 1px solid #00b5e7; }
+
+.second,
+.third {
+  border-left: none; }
+
+.first__frontend-list {
+  padding: 3rem; }
+
+.first__frontend-list-item {
+  padding: 1rem;
+  position: relative;
+  list-style: none; }
+
+.knowledge__icon {
+  width: 5rem;
+  margin-left: -5rem; }
+
+.knowledge__text {
+  padding-left: 4px;
+  position: absolute;
+  top: 50%;
+  transform: translate(0%, -50%); }
+
+.section-about {
+  padding: 3rem;
+  padding-bottom: 20rem;
+  background-color: #2998ff; }

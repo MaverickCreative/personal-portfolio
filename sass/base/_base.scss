@@ -1,0 +1,26 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+
+  @media (max-width: 600px) {
+    font-size: 50%;
+  }
+}
+
+body {
+  padding: 4rem;
+  box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 0rem;
+  }
+}
