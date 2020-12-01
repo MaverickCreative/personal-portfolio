@@ -1,5 +1,10 @@
+.knowledge {
+  margin-top: -12rem;
+}
+
 .row {
   max-width: 80%;
+  margin-top: -16rem;
   text-align: center;
   margin: 0 auto; //trick to center a block element inside another block element
 
@@ -9,9 +14,12 @@
 
   @include clearfix;
 
-  [class^="col-"] {
-    min-height: 120vh;
-    float: left;
+  @media (min-width: 600px) {
+    [class^="col-"] {
+      min-height: 120vh;
+      float: left;
+    }
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.15);
   }
 
   .col-1-of-2 {
@@ -43,21 +51,25 @@
       3 * ((100% - 3 *#{$gutter-horizontal}) / 4) + 2 *#{$gutter-horizontal}
     );
   }
+
+  @media (max-width: 600px) {
+    .col-1-of-3 {
+      width: 100%;
+    }
+    max-width: 90%;
+  }
 }
 
 .grid_column {
-  z-index: 10;
-
   padding: 3rem;
-  margin-top: -16rem;
   border-radius: 3px;
   background-color: white;
   border: 1px solid $color-primary-dark;
-}
 
-.second,
-.third {
-  border-left: none;
+  @media (max-width: 600px) {
+    border: 1px solid $color-primary-dark;
+    margin: 2rem 0rem;
+  }
 }
 
 .first {
@@ -70,6 +82,21 @@
       position: relative;
       list-style: none;
     }
+  }
+}
+
+.second,
+.third {
+  @media (min-width: 600px) {
+    border-left: none;
+  }
+}
+
+.first,
+.second,
+.third {
+  @media (max-width: 600px) {
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.15);
   }
 }
 

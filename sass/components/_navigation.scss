@@ -5,6 +5,7 @@
     width: 16rem;
 
     @media (max-width: 600px) {
+      margin-left: 2rem;
       width: 12rem;
     }
   }
@@ -24,6 +25,11 @@
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
+
+    @media (max-width: 600px) {
+      top: 12rem;
+      left: 2rem;
+    }
   }
 
   &__resources {
@@ -44,6 +50,11 @@
     list-style: none;
     &:not(:last-child) {
       margin-right: 2.5rem;
+    }
+    @media (max-width: 600px) {
+      &:last-child {
+        margin-right: 2rem;
+      }
     }
   }
 
