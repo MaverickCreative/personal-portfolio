@@ -1,5 +1,18 @@
 .section-about {
   padding: 3rem;
-  padding-bottom: 20rem;
+  padding-bottom: 30rem;
   background-color: $color-primary-dark;
+
+  @media (max-width: 600px) {
+    padding: 0rem;
+    padding-top: 2rem;
+  }
+}
+
+.section-my-work {
+  padding: 10rem;
+
+  @media (max-width: 600px) {
+    padding: 10rem 0rem;
+  }
 }

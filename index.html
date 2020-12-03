@@ -60,21 +60,30 @@
     <main>
       <div class="avatar-img"><img src="" /></div>
       <section class="section-about">
-        <div class="about">
-          <div class="about__greeting">Hi, I am Anurag. Nice to meet you.</div>
-          <div class="about__me">
-            Since beginning my journey as a freelance designer nearly 10 years
-            ago, I've done remote work for agencies, consulted for startups, and
-            collaborated with talented people to create digital products for
-            both business and consumer use. I'm quietly confident, naturally
-            curious, and perpetually working on improving my chops one design
-            problem at a time.
+        <div class="row row__about">
+          <div class="col-1-of-3">
+            <img src="./img/screen.svg" class="about-section-image" />
+          </div>
+          <div class="col-2-of-3">
+            <div class="about">
+              <div class="about__greeting">
+                Hi, I am Anurag. Nice to meet you.
+              </div>
+              <div class="about__me">
+                Since beginning my journey as a freelance designer nearly 10
+                years ago, I've done remote work for agencies, consulted for
+                startups, and collaborated with talented people to create
+                digital products for both business and consumer use. I'm quietly
+                confident, naturally curious, and perpetually working on
+                improving my chops one design problem at a time.
+              </div>
+            </div>
           </div>
         </div>
       </section>
       <section class="section-knowledge">
         <div class="knowledge">
-          <div class="row">
+          <div class="row row__knowledge">
             <div class="col-1-of-3 grid_column first">
               <h2 class="heading__tertiary">Front-end</h2>
               <p class="first__frontend-desc">
@@ -188,6 +197,72 @@
                   </li>
                 </ul>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-my-work">
+        <div class="recentWork">
+          <h1 class="heading__secondary">My Recent Work &rarr;</h1>
+          <p class="recentWork__heading-desc">
+            Here are a few design projects I've worked on recently.
+          </p>
+        </div>
+        <div class="row row__my-work">
+          <div class="col-one-of-three work__card">
+            <img
+              src="./img/ai-quotient-logo.svg"
+              class="work_image aiquotient"
+            />
+            <div class="work-desc work__card-info">
+              <div class="work-para">
+                <p>A recommendation engine for machine learning tutorials.</p>
+              </div>
+              <a
+                href="https://www.aiquotient.app"
+                class="btn btn--white work__card-info-button"
+                target="_blank"
+                >Visit Website</a
+              >
+            </div>
+          </div>
+          <div class="col-one-of-three work__card">
+            <img
+              src="./img/thesecretlabel.jpg"
+              class="work_image secret-label"
+            />
+            <div class="work-desc work__card-info">
+              <div class="work-para">
+                <p>
+                  The Secret Label is an online fashion marketplace that
+                  handpicks designers from all over India to showcase their
+                  unique products.
+                </p>
+              </div>
+              <a
+                href="https://www.thesecretlabel.com"
+                class="btn btn--white work__card-info-button"
+                target="_blank"
+                >Visit Website</a
+              >
+            </div>
+          </div>
+          <div class="col-one-of-three work__card">
+            <img src="./img/zibew.png" class="work_image zibew" />
+            <div class="work-desc work__card-info">
+              <div class="work-para">
+                <p>
+                  ZibRX is an all-in-one package for small and medium clinics,
+                  offering E-prescription, Telemedicine and Clinic Management
+                  software.
+                </p>
+              </div>
+              <a
+                href="https://zibrx.com"
+                class="btn btn--white work__card-info-button"
+                target="_blank"
+                >Visit Website</a
+              >
             </div>
           </div>
         </div>

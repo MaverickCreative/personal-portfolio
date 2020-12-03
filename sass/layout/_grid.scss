@@ -3,7 +3,6 @@
 }
 
 .row {
-  max-width: 80%;
   margin-top: -16rem;
   text-align: center;
   margin: 0 auto; //trick to center a block element inside another block element
@@ -12,15 +11,37 @@
     margin-bottom: $gutter-vertical;
   }
 
+  &__knowledge {
+    max-width: 80%;
+    @media (min-width: 600px) {
+      [class^="col-"] {
+        min-height: 115vh;
+        float: left;
+      }
+    }
+  }
+
+  &__my-work {
+    @media (min-width: 600px) {
+      padding-top: 10rem;
+      [class^="col-"] {
+        float: left;
+        &:not(:last-child) {
+          margin-right: $gutter-horizontal;
+        }
+      }
+    }
+  }
+
   @include clearfix;
 
-  @media (min-width: 600px) {
-    [class^="col-"] {
-      min-height: 120vh;
-      float: left;
-    }
-    box-shadow: 0 1rem 2rem rgba($color-black, 0.15);
-  }
+  // @media (min-width: 600px) {
+  //   [class^="col-"] {
+  //     min-height: 120vh;
+  //     float: left;
+  //   }
+  //   box-shadow: 0 1rem 2rem rgba($color-black, 0.15);
+  // }
 
   .col-1-of-2 {
     width: calc((100% - #{$gutter-horizontal}) / 2);
@@ -52,10 +73,29 @@
     );
   }
 
+  .col-one-of-three {
+    width: calc((100% - 2 *#{$gutter-horizontal}) / 3);
+    height: 25rem;
+
+    @media (max-width: 600px) {
+      width: 100%;
+      padding: 5rem 0rem;
+    }
+  }
+
+  &__about {
+    [class^="col-"] {
+      float: left;
+    }
+    max-width: 100%;
+  }
+
   @media (max-width: 600px) {
-    .col-1-of-3 {
+    .col-1-of-3,
+    .col-2-of-3 {
       width: 100%;
     }
+
     max-width: 90%;
   }
 }
