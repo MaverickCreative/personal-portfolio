@@ -39,7 +39,9 @@
 
 .secret-label,
 .zibew,
-.aiquotient {
+.aiquotient,
+.natours,
+.portfolio {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -55,9 +57,19 @@
 }
 
 .aiquotient {
+  height: 16rem;
   @media (max-width: 600px) {
     height: 20rem;
   }
+}
+
+.zibew {
+  height: 7rem;
+  width: 20rem;
+}
+
+.portfolio {
+  height: 20rem;
 }
 
 .work-desc {
@@ -84,4 +96,14 @@
   top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.company-name {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  font-size: 2rem;
+  font-weight: 700;
+  color: $color-grey-dark-3;
 }

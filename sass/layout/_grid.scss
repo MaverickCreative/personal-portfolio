@@ -31,17 +31,12 @@
         }
       }
     }
+    &-second {
+      padding: 0;
+    }
   }
 
   @include clearfix;
-
-  // @media (min-width: 600px) {
-  //   [class^="col-"] {
-  //     min-height: 120vh;
-  //     float: left;
-  //   }
-  //   box-shadow: 0 1rem 2rem rgba($color-black, 0.15);
-  // }
 
   .col-1-of-2 {
     width: calc((100% - #{$gutter-horizontal}) / 2);
@@ -75,7 +70,7 @@
 
   .col-one-of-three {
     width: calc((100% - 2 *#{$gutter-horizontal}) / 3);
-    height: 25rem;
+    height: 28rem;
 
     @media (max-width: 600px) {
       width: 100%;

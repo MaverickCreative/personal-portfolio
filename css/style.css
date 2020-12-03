@@ -254,7 +254,9 @@ body {
 
 .secret-label,
 .zibew,
-.aiquotient {
+.aiquotient,
+.natours,
+.portfolio {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -268,9 +270,18 @@ body {
     .zibew {
       width: 30rem; } }
 
-@media (max-width: 600px) {
-  .aiquotient {
-    height: 20rem; } }
+.aiquotient {
+  height: 16rem; }
+  @media (max-width: 600px) {
+    .aiquotient {
+      height: 20rem; } }
+
+.zibew {
+  height: 7rem;
+  width: 20rem; }
+
+.portfolio {
+  height: 20rem; }
 
 .work-desc {
   height: 30rem;
@@ -290,6 +301,15 @@ body {
   top: 30%;
   left: 50%;
   transform: translate(-50%, -50%); }
+
+.company-name {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333; }
 
 .header {
   display: inline-block;
@@ -377,6 +397,8 @@ body {
         float: left; }
         .row__my-work [class^="col-"]:not(:last-child) {
           margin-right: 6rem; } }
+  .row__my-work-second {
+    padding: 0; }
   .row::after {
     content: "";
     display: table;
@@ -395,7 +417,7 @@ body {
     width: calc( 3 * ((100% - 3 *6rem) / 4) + 2 *6rem); }
   .row .col-one-of-three {
     width: calc((100% - 2 *6rem) / 3);
-    height: 25rem; }
+    height: 28rem; }
     @media (max-width: 600px) {
       .row .col-one-of-three {
         width: 100%;
