@@ -1,0 +1,132 @@
+.story {
+  margin: 0 auto;
+  cursor: pointer;
+  color: $color-grey-dark-3;
+  border-radius: 3px;
+  font-size: $default-font-size;
+  @media (min-width: 600px) {
+    width: 75%;
+    transform: skewX(-12deg);
+    padding: 6rem;
+    padding-left: 9rem;
+  }
+
+  @media (max-width: 600px) {
+    width: 90%;
+  }
+
+  &__shape {
+    width: 15rem;
+    height: 15rem;
+    float: left;
+    border: none;
+    shape-outside: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    @media (min-width: 600px) {
+      transform: translateX(-3rem) skewX(12deg);
+    }
+    @media (max-width: 600px) {
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%);
+    }
+    position: relative;
+  }
+
+  &__image {
+    height: 100%;
+    transform: translateX(0px) scale(1.4);
+    transition: all 0.2s ease-in;
+  }
+
+  &__text {
+    padding-top: 3rem;
+    font-size: 2rem;
+    @media (min-width: 600px) {
+      transform: skewX(12deg);
+    }
+  }
+
+  &__caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    opacity: 0;
+    transition: all 0.3s ease-in;
+    backface-visibility: hidden;
+  }
+
+  &:hover &__caption {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+
+  &:hover &__image {
+    transform: translateX(0px) scale(1);
+    filter: blur(2px) brightness(90%);
+  }
+}
+
+.testimonials-description {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.testimonial-content {
+  @media (max-width: 600px) {
+    margin-top: 16rem;
+  }
+}
+
+.employer-name {
+  position: absolute;
+  bottom: -4rem;
+}
+
+.left-quote-first {
+  position: absolute;
+  left: 16%;
+  color: #444;
+  @media (max-width: 600px) {
+    left: 6%;
+  }
+}
+
+.right-quote-first {
+  position: absolute;
+  right: 2%;
+  color: #444;
+  @media (max-width: 600px) {
+    right: 7%;
+  }
+}
+
+.left-quote-second {
+  position: absolute;
+  left: 22%;
+  color: #444;
+  @media (max-width: 600px) {
+    left: 6%;
+  }
+}
+
+.right-quote-second {
+  position: absolute;
+  right: 2%;
+  color: #444;
+  @media (max-width: 600px) {
+    right: 7%;
+  }
+}
+
+.name {
+  @media (min-width: 600px) {
+    float: right;
+  }
+  margin-top: 5rem;
+  font-weight: 600;
+}
