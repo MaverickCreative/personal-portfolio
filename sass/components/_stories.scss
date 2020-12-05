@@ -60,14 +60,16 @@
     backface-visibility: hidden;
   }
 
-  &:hover &__caption {
-    opacity: 1;
-    transform: translate(-50%, -50%);
-  }
+  @media (min-width: 600px) {
+    &:hover &__caption {
+      opacity: 1;
+      transform: translate(-50%, -50%);
+    }
 
-  &:hover &__image {
-    transform: translateX(0px) scale(1);
-    filter: blur(2px) brightness(90%);
+    &:hover &__image {
+      transform: translateX(0px) scale(1);
+      filter: blur(2px) brightness(90%);
+    }
   }
 }
 
@@ -110,7 +112,7 @@
   left: 22%;
   color: #444;
   @media (max-width: 600px) {
-    left: 6%;
+    left: 4%;
   }
 }
 

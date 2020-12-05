@@ -27,7 +27,7 @@
     visibility: hidden;
     &-button {
       position: absolute;
-      top: 60%;
+      top: 70%;
     }
   }
   &:hover &-info {
@@ -75,6 +75,7 @@
 .work-desc {
   height: 30rem;
   border-radius: 12px;
+
   background-image: linear-gradient(
     to right bottom,
     $color-primary-light,
@@ -106,4 +107,23 @@
   font-size: 2rem;
   font-weight: 700;
   color: $color-grey-dark-3;
+}
+
+.website-and-code {
+  position: absolute;
+  width: 100%;
+  bottom: 2rem;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.github {
+  color: white;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  font-size: 5rem;
+  transform: translate(-50%, -60%);
+
+  transition: all 0.2s ease-in-out;
 }

@@ -71,6 +71,11 @@
       color: white;
     }
 
+    &:active {
+      transform: translate(-50%) translateY(2px);
+      box-shadow: 0 2px 4px rgba($color-black, 0.2);
+    }
+
     &-text {
       text-decoration: none;
       color: $color-black;
