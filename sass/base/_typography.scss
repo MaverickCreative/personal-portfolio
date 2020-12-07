@@ -16,7 +16,12 @@ body {
   display: inline-block;
   font-size: 3rem;
   font-weight: 550;
-  color: $color-grey-dark-3;
+  color: #444;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  &:hover {
+    transform: skewY(-2deg) skewX(-2deg) scale(1.2);
+  }
 }
 
 .heading__tertiary {

@@ -1,0 +1,28 @@
+.projects {
+  height: 80vh;
+
+  background-color: $color-primary-dark;
+  clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+
+  &__header-image {
+    @media (min-width: 600px) {
+      width: 50rem;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    width: 40rem;
+  }
+
+  &__heading {
+    color: white;
+    @media (min-width: 600px) {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    padding-top: 5rem;
+  }
+}

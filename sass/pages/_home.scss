@@ -29,3 +29,10 @@
     font-weight: 400;
   }
 }
+
+.section-internships {
+  padding: 15rem 10rem;
+  @media (max-width: 600px) {
+    padding: 15rem 2rem;
+  }
+}

@@ -11,6 +11,12 @@
     margin-bottom: $gutter-vertical;
   }
 
+  @media (max-width: 600px) {
+    &:not(:last-child) {
+      margin-bottom: 0rem;
+    }
+  }
+
   &__knowledge {
     max-width: 80%;
     @media (min-width: 600px) {
@@ -68,12 +74,28 @@
     );
   }
 
-  .col-one-of-three {
-    width: calc((100% - 2 *#{$gutter-horizontal}) / 3);
-    height: 28rem;
-
+  .col-one-of-two {
+    @media (min-width: 600px) {
+      position: relative;
+      height: 70vh;
+      width: calc((100% - #{$gutter-horizontal}) / 2);
+      float: left;
+    }
+    &:not(:last-child) {
+      margin-right: $gutter-horizontal;
+    }
     @media (max-width: 600px) {
       width: 100%;
+    }
+  }
+
+  .col-one-of-three {
+    width: calc((100% - 2 *#{$gutter-horizontal}) / 3);
+    height: 30rem;
+    box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #e6ecf8;
+    @media (max-width: 600px) {
+      width: 100%;
+      margin-bottom: 3rem;
       padding: 5rem 0rem;
     }
   }
@@ -81,6 +103,19 @@
   &__about {
     [class^="col-"] {
       float: left;
+    }
+    max-width: 100%;
+  }
+
+  &__internships {
+    [class^="col-"] {
+      float: left;
+    }
+    @media (min-width: 600px) {
+      margin-bottom: 22rem !important;
+    }
+    @media (max-width: 600px) {
+      margin-bottom: 15rem !important;
     }
     max-width: 100%;
   }

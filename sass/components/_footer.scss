@@ -1,0 +1,122 @@
+.main-footer {
+  position: relative;
+}
+
+.footer {
+  height: 25rem;
+  @media (max-width: 600px) {
+    height: 30rem;
+  }
+  padding: 5rem;
+  background-color: #00b5e7;
+  color: white;
+
+  &__heading {
+    padding: 5rem 0;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 300;
+  }
+}
+
+.footer-top {
+  height: 14rem;
+  background-color: rgb(63, 61, 86);
+  width: 80%;
+  position: absolute;
+  left: 50%;
+  top: -7rem;
+  border-radius: 12px;
+  transform: translate(-50%);
+  @media (max-width: 600px) {
+    height: 18rem;
+    top: -9rem;
+  }
+  &-heading {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    color: white;
+    @media (max-width: 600px) {
+      width: 90%;
+      text-align: center;
+    }
+  }
+
+  &-button {
+    &:link,
+    &:visited {
+      text-decoration: none;
+      //text-transform: uppercase;
+      border: 1.5px solid white;
+      border-radius: 10rem;
+      color: white;
+      padding: 1rem 2rem;
+      transition: all 0.3s;
+    }
+
+    &:hover {
+      background-color: white;
+      color: rgb(63, 61, 86);
+    }
+  }
+}
+
+.footer-button {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%);
+  @media (max-width: 600px) {
+    top: 70%;
+  }
+}
+
+.footer__social-icons {
+  position: relative;
+  &-items {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+    text-align: center;
+    @media (max-width: 600px) {
+      padding: 3rem;
+      width: 100%;
+    }
+    &-li {
+      display: inline-block;
+      font-size: 3.2rem;
+      &:not(:last-child) {
+        margin-right: 2rem;
+      }
+      padding-left: 0rem;
+      margin-left: 2rem;
+    }
+  }
+}
+
+.social-link {
+  &:link,
+  &:visited {
+    text-decoration: none;
+    color: white;
+  }
+  &:hover {
+    .fa {
+      filter: blur(0px);
+      transform: scale(1.2);
+      color: rgb(63, 61, 86);
+    }
+  }
+}
+
+.fa {
+  @media (min-width: 600px) {
+    filter: blur(0.4px);
+  }
+  transition: all 0.2s ease-in-out;
+}

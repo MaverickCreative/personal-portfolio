@@ -16,6 +16,7 @@ html {
 
 body {
   padding: 4rem;
+  padding-bottom: 0rem;
   box-sizing: border-box;
 }
 
@@ -38,4 +39,12 @@ body {
   margin-right: 2rem;
   background: linear-gradient(45deg, $color-grey-dark, $color-grey-dark-3);
   border-radius: 3px;
+}
+
+.website-links {
+  &:link,
+  &:visited {
+    text-decoration: none;
+    color: #333;
+  }
 }

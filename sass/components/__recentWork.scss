@@ -19,7 +19,7 @@
 
 .work__card {
   position: relative;
-
+  border-radius: 12px;
   &-info {
     position: relative;
     transition: all 0.3s ease-in-out;
@@ -102,6 +102,7 @@
 .company-name {
   position: absolute;
   bottom: 0;
+  padding: 2rem;
   left: 50%;
   transform: translate(-50%, 0%);
   font-size: 2rem;
