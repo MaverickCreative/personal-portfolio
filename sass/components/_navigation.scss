@@ -52,6 +52,9 @@
       margin-right: 2.5rem;
     }
     @media (max-width: 600px) {
+      &:not(:last-child) {
+        margin-right: 0rem !important;
+      }
       &:last-child {
         margin-right: 2rem;
       }
@@ -63,7 +66,7 @@
     text-decoration: none;
     transition: all 0.2s;
     border: 2px solid $color-primary-dark;
-    padding: 1rem;
+    padding: 1rem 2rem;
     border-radius: 10rem;
     &:hover,
     &:active {

@@ -27,6 +27,10 @@
     }
   }
 
+  &__blog {
+    padding: 10rem 0rem;
+  }
+
   &__my-work {
     @media (min-width: 600px) {
       padding-top: 10rem;

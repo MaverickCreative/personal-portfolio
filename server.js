@@ -13,6 +13,10 @@ app.get("/projects-and-work", (req, res) => {
   res.sendFile(path.join(__dirname, "./projects.html"));
 });
 
+app.get("/blogs", (req, res) => {
+  res.sendFile(path.join(__dirname, "./blogs.html"));
+});
+
 app.listen(port, () => {
   console.log("app started!");
 });

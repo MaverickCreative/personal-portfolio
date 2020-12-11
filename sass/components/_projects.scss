@@ -5,6 +5,7 @@
   clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
 
   &__header-image {
+    transition: all 0.2s ease-in-out;
     @media (min-width: 600px) {
       width: 50rem;
       position: absolute;

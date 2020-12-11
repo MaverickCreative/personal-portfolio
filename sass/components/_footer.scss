@@ -55,6 +55,7 @@
       color: white;
       padding: 1rem 2rem;
       transition: all 0.3s;
+      padding-left: 6rem;
     }
 
     &:hover {
@@ -68,6 +69,8 @@
   position: absolute;
   top: 60%;
   left: 50%;
+  width: 100%;
+  text-align: center;
   transform: translate(-50%);
   @media (max-width: 600px) {
     top: 70%;
@@ -119,4 +122,13 @@
     filter: blur(0.4px);
   }
   transition: all 0.2s ease-in-out;
+}
+
+.email-icon {
+  width: 3rem;
+  position: absolute;
+  left: 39%;
+  @media (max-width: 600px) {
+    left: 15%;
+  }
 }
