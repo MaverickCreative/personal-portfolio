@@ -3,9 +3,9 @@
 }
 
 .footer {
-  height: 25rem;
+  height: 28rem;
   @media (max-width: 600px) {
-    height: 30rem;
+    height: 35rem;
   }
   padding: 5rem;
   background-color: #00b5e7;
@@ -15,7 +15,7 @@
     padding: 5rem 0;
     text-align: center;
     font-size: 2.5rem;
-    font-weight: 300;
+    font-weight: 400;
   }
 }
 
@@ -39,7 +39,7 @@
     transform: translate(-50%, -50%);
     font-size: 2rem;
     color: white;
-    @media (max-width: 600px) {
+    @media (max-width: 900px) {
       width: 90%;
       text-align: center;
     }
@@ -53,9 +53,9 @@
       border: 1.5px solid white;
       border-radius: 10rem;
       color: white;
-      padding: 1rem 2rem;
+      padding: 1rem 1rem;
       transition: all 0.3s;
-      padding-left: 6rem;
+      //padding-left: 6rem;
     }
 
     &:hover {
@@ -126,9 +126,7 @@
 
 .email-icon {
   width: 3rem;
-  position: absolute;
-  left: 39%;
+
   @media (max-width: 600px) {
-    left: 15%;
   }
 }

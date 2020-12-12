@@ -101,4 +101,9 @@
   left: 50%;
   transform: translate(-50%) translateY(-1px);
   padding: 1rem 2rem !important;
+  @media (max-width: 1200px) {
+    & {
+      width: 60%;
+    }
+  }
 }
